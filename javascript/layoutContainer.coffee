@@ -1,6 +1,6 @@
 window.ResizeLayoutContainer = (params) ->
   params = if params then params else {}
-  parent = if params.parent then params.parent else "#streams_container"
+  parent = if params.container then params.container else "#streams_container"
   element = if params.element then params.element else ".OT_video-container"
   parent$ = $(parent)
   parent$.css( {'padding-top': "0"} )
