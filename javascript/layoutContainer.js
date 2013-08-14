@@ -4,7 +4,7 @@
   window.ResizeLayoutContainer = function(params) {
     var cols, eHeight, eWidth, element, height, nHeight, nWidth, parent, parent$, rows, spacing, testHeight, testWidth, videoCount, width;
     params = params ? params : {};
-    parent = params.parent ? params.parent : "#streams_container";
+    parent = params.container ? params.container : "#streams_container";
     element = params.element ? params.element : ".OT_video-container";
     parent$ = $(parent);
     parent$.css({
@@ -58,4 +58,3 @@
   };
 
 }).call(this);
-
